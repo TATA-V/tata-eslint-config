@@ -19,7 +19,6 @@ module.exports = {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'arrow-parens': ['warn', 'as-needed'],
     'no-unused-vars': ['off'],
-    'no-console': ['off'],
     'import/prefer-default-export': ['off'],
     'react-hooks/exhaustive-deps': ['warn'],
     'react/jsx-pascal-case': 'warn',
