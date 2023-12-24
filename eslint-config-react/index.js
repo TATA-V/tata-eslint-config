@@ -32,7 +32,7 @@ module.exports = {
     'no-nested-ternary': 0,
     'react/jsx-curly-brace-presence': ['warn', { props: 'always', children: 'always' }],
     'import/no-unresolved': 'off',
-    'react/jsx-props-no-spreading': [1, { custom: 'ignore' }],
+    'react/jsx-props-no-spreading': 'off',
     'linebreak-style': 0,
     'import/extensions': 'off',
     'no-use-before-define': 0,
