@@ -42,7 +42,6 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
     indent: ['error', 2, { SwitchCase: 1 }],
-    'max-len': ['error', { code: 120 }],
     'arrow-parens': ['error', 'always'],
     'no-console': 'warn',
   },
