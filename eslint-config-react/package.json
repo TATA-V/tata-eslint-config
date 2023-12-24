@@ -1,6 +1,6 @@
 {
   "name": "@tata-v/eslint-config-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "keywords": [],
   "author": {
@@ -9,6 +9,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
@@ -21,4 +22,5 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.15.0"
   }
+  
 }
