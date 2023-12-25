@@ -18,9 +18,9 @@ module.exports = {
     'no-extra-semi': 'error',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'arrow-parens': ['warn', 'as-needed'],
-    'no-unused-vars': ['off'],
-    'import/prefer-default-export': ['off'],
-    'react-hooks/exhaustive-deps': ['warn'],
+    'no-unused-vars': 'off',
+    'import/prefer-default-export': 'off',
+    'react-hooks/exhaustive-deps': 'off',
     'react/jsx-pascal-case': 'warn',
     'react/jsx-key': 'warn',
     'no-debugger': 'off',
@@ -43,5 +43,6 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'no-console': 'warn',
     'react/button-has-type': 'off',
+    'no-alert': 'off'
   },
 }
