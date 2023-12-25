@@ -42,5 +42,6 @@ module.exports = {
     indent: ['error', 2, { SwitchCase: 1 }],
     'arrow-parens': ['error', 'always'],
     'no-console': 'warn',
+    'react/button-has-type': 'off',
   },
 }
