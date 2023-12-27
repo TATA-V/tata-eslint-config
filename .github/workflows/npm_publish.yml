@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/npm-publish.yml'
+      - '.github/workflows/npm_publish.yml'
       - 'eslint-config-react/**'
       - '!eslint-config-react/package.json'
 
