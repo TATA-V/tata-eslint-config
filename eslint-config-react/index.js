@@ -43,6 +43,7 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'no-console': 'warn',
     'react/button-has-type': 'off',
-    'no-alert': 'off'
+    'no-alert': 'off',
+    'max-len': 'off'
   },
 }
