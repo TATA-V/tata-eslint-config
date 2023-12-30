@@ -44,6 +44,9 @@ module.exports = {
     'no-console': 'warn',
     'react/button-has-type': 'off',
     'no-alert': 'off',
-    'max-len': 'off'
+    'max-len': 'off',
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   },
 }
