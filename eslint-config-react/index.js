@@ -50,6 +50,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "warn",
     "react/destructuring-assignment": 'off',
     "react/no-array-index-key": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-undef": "off"
   },
 }
