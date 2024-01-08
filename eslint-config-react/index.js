@@ -51,6 +51,7 @@ module.exports = {
     "react/destructuring-assignment": 'off',
     "react/no-array-index-key": "off",
     "no-param-reassign": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "@typescript-eslint/no-explicit-any": "off",
   },
 }
