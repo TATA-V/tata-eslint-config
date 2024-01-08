@@ -47,7 +47,7 @@ module.exports = {
     'max-len': 'off',
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
     "react/destructuring-assignment": 'off',
     "react/no-array-index-key": "off",
     "no-param-reassign": "off",
