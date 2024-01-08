@@ -49,6 +49,7 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "react/destructuring-assignment": 'off',
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "no-param-reassign": "off"
   },
 }
