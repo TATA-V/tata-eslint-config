@@ -54,6 +54,7 @@ module.exports = {
     "no-undef": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "object-curly-newline": "off",
-    "semi": ["error", 'always']
+    "semi": ["error", 'always'],
+    "react/jsx-no-useless-fragment": "off"
   },
 }
