@@ -54,6 +54,6 @@ module.exports = {
     "no-undef": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "object-curly-newline": "off",
-    "semi": "off"
+    "semi": ["error", 'always']
   },
 }
