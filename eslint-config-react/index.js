@@ -55,6 +55,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "object-curly-newline": "off",
     "semi": ["error", 'always'],
-    "react/jsx-no-useless-fragment": "off"
+    "react/jsx-no-useless-fragment": "off",
+    "react/no-unused-prop-types": 'warn'
   },
 }
