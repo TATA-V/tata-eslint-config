@@ -10,7 +10,7 @@ module.exports = {
     'plugin:import/warnings',
   ],
   parser: '@typescript-eslint/parser',
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['node_modules'],
   plugins: ['@typescript-eslint/eslint-plugin'],
   rules: {
     'no-var': 'warn',
