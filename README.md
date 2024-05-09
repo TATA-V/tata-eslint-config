@@ -1,1 +1,1 @@
-eslint config react
+eslint config react nextjs
