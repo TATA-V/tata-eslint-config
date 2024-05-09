@@ -1,0 +1,41 @@
+name: Publish eslint nextjs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/npm_publish_nextjs.yml'
+      - 'eslint-config-nextjs/**'
+      - '!eslint-config-nextjs/package.json'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./eslint-config-nextjs
+    permissions:
+      contents: write
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - name: auto version update
+        run: |
+          npm version patch
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: Actions Bot <actions@github.com>
+          commit_message: 'chore(package.json): update version'
+
+      - name: Publish to NPM
+        run: |
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    
