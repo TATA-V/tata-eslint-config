@@ -1,0 +1,48 @@
+Arguments: 
+  /Users/hyeona/.nvm/versions/node/v20.12.2/bin/node /Users/hyeona/.node/corepack/yarn/1.22.19/bin/yarn.js add @typescript-eslint/parser
+
+PATH: 
+  /Users/hyeona/.nvm/versions/node/v20.12.2/bin:/opt/homebrew/bin:/usr/local/bin:/opt/homebrew/bin:/Users/hyeona/.rbenv/shims:/opt/homebrew/bin:/usr/local/opt/python/libexec/bin:/Users/hyeona/.nvm/versions/node/v18.17.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/hyeona/Library/Android/sdk/emulator:/Users/hyeona/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.12.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/hyeona/Library/Caches/Yarn/v6/npm-ms-2.1.3-574c8138ce1d2b5861f0b44579dbadd60c6615b2-integrity/node_modules/ms/license.md' -> '/Users/hyeona/Desktop/desktopFolder/1_프로젝트/7_eslint/tata-eslint-config/eslint-config-nextjs/node_modules/eslint-module-utils/node_modules/ms/license.md'
+
+npm manifest: 
+  {
+    "name": "@tata-v/eslint-config-nextjs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "keywords": [],
+    "author": {
+      "name": "tata-v",
+      "email": "tatahyeonv@gmail.com"
+    },
+    "license": "ISC",
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^7.8.0",
+      "@typescript-eslint/parser": "^7.8.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-airbnb-typescript": "^18.0.0",
+      "eslint-plugin-import": "^2.29.1",
+      "eslint-plugin-jsx-a11y": "^6.8.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
