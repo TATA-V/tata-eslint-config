@@ -63,6 +63,36 @@ module.exports = {
     'no-redeclare:': 'off',
     'prefer-destructuring': 'off',
     'no-unsafe-optional-chaining': 'off',
-    'jsx-a11y/label-has-associated-control': 'off'
+    'jsx-a11y/label-has-associated-control': 'off',
+    'import/no-absolute-path': 'error',
+    'func-names': 'off',
+    'react/no-unknown-property': 'off',
+    'no-multi-assign': 'off',
+    '@typescript-eslint/no-use-before-define': 'off', 
+    'no-plusplus': 'off',
+    'no-return-assign': 'off',
+    'react-hooks/rules-of-hooks': 'off',
+    'overrides': [
+      {
+        'files': ['*.ts', '*.tsx'],
+        'rules': {
+          '@typescript-eslint/no-unused-vars': 'warn'
+        }
+      },
+    ],
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': ['@/*']
+      }
+    ]
+  },
+  settings: {
+    'import/resolver': {
+      'node': {
+        'paths': ['src'],
+        'extensions': ['.js', '.jsx', '.ts', '.tsx']
+      }
+    }
   }
 }
