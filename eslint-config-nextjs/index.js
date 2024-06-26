@@ -72,14 +72,6 @@ module.exports = {
     'no-plusplus': 'off',
     'no-return-assign': 'off',
     'react-hooks/rules-of-hooks': 'off',
-    'overrides': [
-      {
-        'files': ['*.ts', '*.tsx'],
-        'rules': {
-          '@typescript-eslint/no-unused-vars': 'warn'
-        }
-      },
-    ],
     'no-restricted-imports': [
       'error',
       {
