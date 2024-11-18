@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-           
+          
       - name: auto version update
         run: |
           npm version patch
