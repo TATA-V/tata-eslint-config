@@ -1,1 +1,1 @@
-eslint config react nextjs
+eslint config react nextjs vue3
