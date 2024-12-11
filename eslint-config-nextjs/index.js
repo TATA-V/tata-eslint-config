@@ -91,7 +91,9 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/space-infix-ops': 'off',
     '@typescript-eslint/object-curly-spacing': 'off',
-    '@typescript-eslint/brace-style': 'off'
+    '@typescript-eslint/brace-style': 'off',
+    'comma-spacing': ['error', { 'before': false, 'after': true }],
+    // 'space-infix-ops': ['error', { 'int32Hint': false }],
   },
   settings: {
     'import/resolver': {
