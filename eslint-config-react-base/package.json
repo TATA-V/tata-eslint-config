@@ -1,0 +1,15 @@
+{
+  "name": "@tata-v/eslint-config-react-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": {
+    "name": "tata-v",
+    "email": "tatahyeonv@gmail.com"
+  },
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
