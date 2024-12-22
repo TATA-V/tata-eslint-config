@@ -39,7 +39,8 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
+    'react/self-closing-comp': 'error'
   },
   settings: {
     react: {
