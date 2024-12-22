@@ -36,7 +36,10 @@ module.exports = {
     'react/no-unused-prop-types': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
     'no-multiple-empty-lines': [ 'error', { max: 1 } ],
-    'object-curly-spacing': ['error', 'always']
+    'object-curly-spacing': ['error', 'always'],
+    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent-props': ['error', 2],
+    'react/react-in-jsx-scope': 'off'
   },
   settings: {
     react: {
