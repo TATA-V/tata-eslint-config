@@ -35,6 +35,8 @@ module.exports = {
     'react/jsx-no-useless-fragment': 'off',
     'react/no-unused-prop-types': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
+    'no-multiple-empty-lines': [ 'error', { max: 1 } ],
+    'object-curly-spacing': ['error', 'always']
   },
   settings: {
     react: {
