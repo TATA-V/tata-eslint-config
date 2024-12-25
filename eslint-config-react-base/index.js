@@ -40,7 +40,8 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/react-in-jsx-scope': 'off',
-    'react/self-closing-comp': 'error'
+    'react/self-closing-comp': 'error',
+    'jsx-quotes': ['error', 'prefer-double']
   },
   settings: {
     react: {
