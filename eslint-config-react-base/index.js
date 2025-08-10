@@ -14,10 +14,7 @@ module.exports = {
     'react/jsx-pascal-case': 'warn',
     'react/jsx-key': 'warn',
     'no-debugger': 'off',
-    'react/function-component-definition': [
-      2,
-      { namedComponents: ['arrow-function', 'function-declaration'] },
-    ],
+    'react/function-component-definition': [2, { namedComponents: ['arrow-function', 'function-declaration'] }],
     'react/react-in-jsx-scope': 0,
     'react/prefer-stateless-function': 0,
     'react/jsx-one-expression-per-line': 0,
@@ -30,6 +27,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-undef': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
     'semi': ['error', 'always'],
     'react/jsx-no-useless-fragment': 'off',
     'react/no-unused-prop-types': 'warn',
@@ -38,7 +36,11 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'error',
-    'jsx-quotes': ['error', 'prefer-double']
+    'jsx-quotes': ['error', 'prefer-double'],
+    'space-infix-ops': ['error', { int32Hint: false }],
+    'comma-spacing': ['error', { before: false, after: true }],
+    'import/no-absolute-path': 'error',
+    'max-len': 'off',
   },
   settings: {
     react: {
