@@ -27,7 +27,6 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-undef': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
     'semi': ['error', 'always'],
     'react/jsx-no-useless-fragment': 'off',
     'react/no-unused-prop-types': 'warn',
