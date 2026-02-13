@@ -1,6 +1,6 @@
 {
   "name": "@tata-v/eslint-config-react-base",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "main": "index.js",
   "type": "module",
   "exports": {
