@@ -1,7 +1,11 @@
 {
   "name": "@tata-v/eslint-config-react-base",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
   "keywords": [],
   "author": {
     "name": "tata-v",
@@ -11,5 +15,17 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "@eslint/js": "^10.0.0",
+    "@eslint/compat": "^1.0.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0"
+  },
+  "peerDependenciesMeta": {
+    "@eslint/compat": { "optional": true }
   }
 }
