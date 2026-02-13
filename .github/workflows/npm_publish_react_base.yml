@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v3
         with:
@@ -29,6 +31,9 @@ jobs:
       - name: auto version update
         run: npm version patch --no-git-tag-version
 
+      - name: Sync with remote
+        run: git pull --rebase origin main
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: Actions Bot <actions@github.com>
@@ -36,4 +41,5 @@ jobs:
 
       - name: Publish to NPM
         run: npm publish --access public --provenance
+
 
