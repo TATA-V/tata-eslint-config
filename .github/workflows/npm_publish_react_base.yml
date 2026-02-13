@@ -23,6 +23,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Sync with remote
+        run: git pull --rebase origin main
+
       - uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -31,9 +34,6 @@ jobs:
       - name: auto version update
         run: npm version patch --no-git-tag-version
 
-      - name: Sync with remote
-        run: git pull --rebase origin main
-
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: Actions Bot <actions@github.com>
@@ -41,5 +41,4 @@ jobs:
 
       - name: Publish to NPM
         run: npm publish --access public --provenance
-
 
