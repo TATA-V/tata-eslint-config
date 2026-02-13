@@ -1,6 +1,6 @@
 {
   "name": "@tata-v/eslint-config-react-base",
-  "version": "2.0.7",
+  "version": "2.0.2",
   "main": "index.js",
   "type": "module",
   "exports": {
@@ -26,8 +26,10 @@
     "eslint-plugin-jsx-a11y": "^6.10.0"
   },
   "peerDependenciesMeta": {
-    "@eslint/compat": {
-      "optional": true
-    }
+    "@eslint/compat": { "optional": true }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TATA-V/tata-eslint-config"
   }
 }
