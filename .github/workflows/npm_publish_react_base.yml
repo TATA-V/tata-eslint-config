@@ -2,8 +2,7 @@ name: Publish eslint react base
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - '.github/workflows/npm_publish_react_base.yml'
       - 'eslint-config-react-base/**'
@@ -17,24 +16,24 @@ jobs:
         working-directory: ./eslint-config-react-base
     permissions:
       contents: write
+      id-token: write
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
       - name: auto version update
-        run: |
-          npm version patch
+        run: npm version patch --no-git-tag-version
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: Actions Bot <actions@github.com>
           commit_message: 'chore(package.json): update version'
 
       - name: Publish to NPM
-        run: |
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public --provenance
+
