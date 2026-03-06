@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import { fixupPluginRules } from "@eslint/compat";
+
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import importPlugin from "eslint-plugin-import";
