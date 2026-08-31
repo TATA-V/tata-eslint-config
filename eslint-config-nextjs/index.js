@@ -18,6 +18,7 @@ export default function tataNextConfig(options = {}) {
       },
 
       rules: {
+        // Stylistic
         '@stylistic/indent': ['error', 2, { SwitchCase: 1, ignoredNodes: ['TSTypeAliasDeclaration *', 'TSUnionType', 'TSIntersectionType'] }],
 
         // ESLint core
