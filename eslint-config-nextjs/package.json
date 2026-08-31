@@ -1,6 +1,6 @@
 {
   "name": "@tata-v/eslint-config-nextjs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "index.js",
   "keywords": [],
   "author": {
@@ -13,10 +13,10 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-  "eslint": "^9.7.0",
-  "next": ">=15.0.0",
-  "typescript": ">=5.0.0"
-},
+    "eslint": "^9.7.0",
+    "next": ">=15.0.0",
+    "typescript": ">=5.0.0"
+  },
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.0.0",
     "eslint-config-next": "^16.0.0"
