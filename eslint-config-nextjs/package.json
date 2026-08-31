@@ -20,5 +20,9 @@
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.0.0",
     "eslint-config-next": "^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TATA-V/tata-eslint-config"
   }
 }
