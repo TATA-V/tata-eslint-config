@@ -7,6 +7,7 @@ on:
       - '.github/workflows/npm_publish_nextjs.yml'
       - 'eslint-config-nextjs/**'
       - '!eslint-config-nextjs/package.json'
+      - '!eslint-config-nextjs/README.md'
 
 jobs:
   publish:

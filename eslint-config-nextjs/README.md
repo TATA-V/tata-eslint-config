@@ -1,10 +1,12 @@
-Install
+`eslint-config-next` is included by `@tata-v/eslint-config-nextjs` and does not need to be installed separately.
+
+### Install
 
 ```bash
-pnpm add -D @tata-v/eslint-config-nextjs
+pnpm add -D @tata-v/eslint-config-nextjs@latest
 ```
 
-eslint.config.mjs
+### eslint.config.mjs
 
 ```mjs
 import { defineConfig, globalIgnores } from 'eslint/config';
@@ -20,7 +22,7 @@ export default defineConfig([
     'next-env.d.ts',
   ]),
 
-  // Project-specific overrides
+  // Project-specific overrides (optional)
   {
     rules: {
       '@next/next/no-img-element': 'off',
