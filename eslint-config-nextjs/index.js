@@ -4,7 +4,7 @@ import stylistic from '@stylistic/eslint-plugin';
 
 export default function tataNextConfig(options = {}) {
   const {
-    files = ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    files = ['**/*.{js,mjs,ts,jsx,tsx}'],
   } = options;
 
   return [
