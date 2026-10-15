@@ -11,6 +11,7 @@ on:
       - '.github/workflows/npm_publish.yml'
       - 'eslint-config-react/**'
       - '!eslint-config-react/package.json'
+      - '!eslint-config-react/pnpm-lock.yaml'
 
 jobs:
   publish:

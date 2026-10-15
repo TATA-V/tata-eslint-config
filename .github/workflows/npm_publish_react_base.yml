@@ -7,6 +7,7 @@ on:
       - '.github/workflows/npm_publish_react_base.yml'
       - 'eslint-config-react-base/**'
       - '!eslint-config-react-base/package.json'
+      - '!eslint-config-react-base/pnpm-lock.yaml'
 
 jobs:
   publish:

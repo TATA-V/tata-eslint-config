@@ -8,6 +8,7 @@ on:
       - '.github/workflows/npm_publish.yml'
       - 'eslint-config-vue3/**'
       - '!eslint-config-vue3/package.json'
+      - '!eslint-config-vue3/pnpm-lock.yaml'
 
 jobs:
   publish:
