@@ -1,44 +1,83 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
 name: Publish eslint
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - '.github/workflows/npm_publish.yml'
       - 'eslint-config-react/**'
       - '!eslint-config-react/package.json'
+      - '!eslint-config-react/package-lock.json'
       - '!eslint-config-react/pnpm-lock.yaml'
+      - '!eslint-config-react/README.md'
+
+concurrency:
+  group: publish-eslint-react
+  cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     defaults:
       run:
         working-directory: ./eslint-config-react
+
     permissions:
       contents: write
+      id-token: write
+
     timeout-minutes: 8
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          node-version: 20
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
           registry-url: https://registry.npmjs.org/
-          
-      - name: auto version update
+
+      - name: Upgrade npm
+        run: npm install -g npm@^11
+
+      - name: Update version
+        run: npm version patch --no-git-tag-version
+
+      - name: Commit and push version
         run: |
-          npm version patch
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: Actions Bot <actions@github.com>
-          commit_message: 'chore(package.json): update version'
-    
-      - name: Publish to NPM
-        run: |
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add package.json
+          if [ -f package-lock.json ]; then
+            git add package-lock.json
+          fi
+
+          base_commit=$(git rev-parse HEAD)
+          git commit -m "chore(package.json): update version"
+
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+
+            if ! git merge-base --is-ancestor "$base_commit" origin/main; then
+              echo "Remote main history changed. Stopping without force push."
+              exit 1
+            fi
+
+            git rebase origin/main
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+
+          echo "Push failed after 5 attempts."
+          exit 1
+
+      - name: Publish to NPM (OIDC)
+        run: npm publish --access public --provenance
