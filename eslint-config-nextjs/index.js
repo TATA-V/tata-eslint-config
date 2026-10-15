@@ -47,10 +47,11 @@ export default function tataNextConfig(options = {}) {
         'no-return-assign': 'off',
 
         // formatting
-        quotes: ['error', 'single'],
+        quotes: ['error', 'single', { avoidEscape: true }],
         'arrow-parens': ['error', 'always'],
         semi: ['error', 'always'],
         'comma-spacing': ['error', { before: false, after: true }],
+        'jsx-quotes': ['error', 'prefer-double'],
 
         // React
         'react/prop-types': 'off',
