@@ -55,10 +55,7 @@ export default function tataNextConfig(options = {}) {
 
         // React
         'react/prop-types': 'off',
-        'react/jsx-filename-extension': [
-          'error',
-          { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-        ],
+        'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
         'react/jsx-pascal-case': 'warn',
         'react/jsx-key': 'warn',
         'react/function-component-definition': [
